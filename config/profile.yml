@@ -66,9 +66,9 @@ narrative:
   #   password: "demo-2026"
 
 compensation:
-  target_range: "$150K+"     # Replace with your target total comp
+  target_range: "$200K+"     # Replace with your target total comp
   currency: "USD"
-  minimum: "$150K"               # Replace with your walk-away number
+  minimum: "$200K"               # Replace with your walk-away number
   location_flexibility: "Open to Atlanta-based and remote opportunities"
 
 location:
