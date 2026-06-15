@@ -10,6 +10,7 @@
    - US/Canada → `letter`
    - Resto del mundo → `a4`
 6. Detecta arquetipo del rol → adapta framing
+6b. Lee `config/profile.yml` y, si `documents.resume_template` existe, selecciona el template HTML correspondiente en `templates/`
 7. Reescribe Professional Summary inyectando keywords del JD + exit narrative bridge ("Built and sold a business. Now applying systems thinking to [domain del JD].")
 8. Selecciona top 3-4 proyectos más relevantes para la oferta
 9. Reordena bullets de experiencia por relevancia al JD
@@ -35,10 +36,9 @@
 
 - **Fonts**: Space Grotesk (headings, 600-700) + DM Sans (body, 400-500)
 - **Fonts self-hosted**: `fonts/`
-- **Header**: nombre en Space Grotesk 24px bold + línea gradiente `linear-gradient(to right, hsl(187,74%,32%), hsl(270,70%,45%))` 2px + fila de contacto
-- **Section headers**: Space Grotesk 13px, uppercase, letter-spacing 0.05em, color cyan primary
-- **Body**: DM Sans 11px, line-height 1.5
-- **Company names**: color accent purple `hsl(270,70%,45%)`
+- **Template default**: `templates/cv-template.html`
+- **Template alternativo nombrado**: `documents.resume_template: executive-clean` → `templates/cv-template-executive-clean.html`
+- **Executive clean hierarchy**: nombre como anchor visual principal, contacto más ligero debajo, headers consistentes, bullets sobrios, sin clutter
 - **Márgenes**: 0.6in
 - **Background**: blanco puro
 
@@ -63,7 +63,12 @@ Ejemplos de reformulación legítima:
 
 ## Template HTML
 
-Usar el template en `cv-template.html`. Reemplazar los placeholders `{{...}}` con contenido personalizado:
+Usar el template indicado por `config/profile.yml` si existe:
+
+- `documents.resume_template: executive-clean` → `templates/cv-template-executive-clean.html`
+- Sin preferencia → `templates/cv-template.html`
+
+Reemplazar los placeholders `{{...}}` con contenido personalizado:
 
 | Placeholder | Contenido |
 |-------------|-----------|
@@ -71,6 +76,7 @@ Usar el template en `cv-template.html`. Reemplazar los placeholders `{{...}}` co
 | `{{PAGE_WIDTH}}` | `8.5in` (letter) o `210mm` (A4) |
 | `{{NAME}}` | (from profile.yml) |
 | `{{EMAIL}}` | (from profile.yml) |
+| `{{PHONE}}` | (from profile.yml) |
 | `{{LINKEDIN_URL}}` | [from profile.yml] |
 | `{{LINKEDIN_DISPLAY}}` | [from profile.yml] |
 | `{{PORTFOLIO_URL}}` | [from profile.yml] (o /es según idioma) |

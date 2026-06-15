@@ -1,6 +1,4 @@
 # Career-Ops Profile Configuration
-# Copy this file to config/profile.yml and fill in your details.
-# This is the single source of truth for your personal data across all modes.
 
 candidate:
   full_name: "Aaliya Bashir"
@@ -8,73 +6,73 @@ candidate:
   phone: "+1-678-594-1031"
   location: "Atlanta, GA"
   linkedin: "linkedin.com/in/aaliya-bashir/"
-  portfolio_url: ""
-  github: ""
-  twitter: ""
-  # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
-  # Find it in your Canva design URL: https://www.canva.com/design/DAxxxxxxx/...
-  # The ID starts with "D" and is 11 characters long.
-  # canva_resume_design_id: "DAxxxxxxxxx"
+  portfolio_url: "file:///Users/aaliyathewarrior/Downloads/Aaliya_Bashir_Portfolio.pptx"
+  portfolio_display: "Aaliya Bashir Portfolio Presentation"
+  visa_status: "U.S. citizen"
+
+documents:
+  resume_template: "executive-clean"
+  resume_length_target: "1 page"
+  resume_style_notes: "Use a clean executive hierarchy: strongest visual emphasis on the name, lighter contact line beneath, consistent section headers, restrained ATS-friendly formatting, and role-specific wording for every application."
 
 target_roles:
-  # Your North Star roles — what you're optimizing for
   primary:
-    - "Total Rewards Program Manager"
-    - "People Analytics Program Manager"
-    - "Senior HR Program Manager"
-    - "Compensation Program Manager"
-  # Archetypes help the evaluation system score fit
+    - "Director of Corporate Innovation"
+    - "VP / Director of Sustainability"
+    - "Director of ESG Programs"
+    - "Senior Program Manager, Energy Transition"
+    - "Chief of Staff / Strategic Operations Executive"
   archetypes:
-    - name: "Total Rewards Program Manager"
-      level: "Senior"
-      fit: "primary"        # primary = dream role, secondary = good fit, adjacent = stretch
-    - name: "People Analytics Manager"
-      level: "Senior"
+    - name: "Corporate Innovation Executive"
+      level: "Director / VP"
+      fit: "primary"
+    - name: "Sustainability / ESG Program Leader"
+      level: "Director / VP"
+      fit: "primary"
+    - name: "Strategic Program Director"
+      level: "Senior Director"
       fit: "secondary"
-    - name: "HR Program Manager"
-      level: "Senior"
+    - name: "Energy Sector Operations Leader"
+      level: "Director"
       fit: "secondary"
-    - name: "Compensation Program Manager"
-      level: "Senior"
-      fit: "secondary"
-    - name: "Technical Program Manager"
-      level: "Senior"
+    - name: "Total Rewards / People Analytics Executive"
+      level: "Senior Director"
       fit: "adjacent"
 
 narrative:
-  # Your professional headline (1 line)
-  headline: "Total Rewards Program Manager and HR data strategist"
-  # Your exit story — what makes you unique
-  exit_story: "Program and operations leader with 13+ years translating complex people, systems, and stakeholder needs into executive-ready decisions."
-  # Your top 3-5 superpowers
+  headline: "Strategic operations and program leader — Harvard Corporate Sustainability, ESG-oriented, PMP, 16+ years delivering at scale"
+  exit_story: "Built a career moving between high-complexity environments — healthcare systems, federal defense contractors, academic medicine, and real estate — always in the seat where data meets executive decisions. Holds a Harvard Certificate in Corporate Sustainability and Innovation and brings an ESG-oriented lens to program design, stakeholder alignment, and enterprise execution. Now targeting director-level roles in corporate innovation, ESG, and energy where program rigor and storytelling create enterprise-wide impact."
   superpowers:
-    - "Executive storytelling with data"
-    - "Cross-functional program leadership"
-    - "Dashboard development and decision support"
-    - "Process design and workflow improvement"
-  # Proof points — projects, articles, case studies with measurable impact
+    - "Executive storytelling — translating complex data into leadership-ready narratives"
+    - "Multi-stakeholder program management at scale ($4.5M+ budgets, 10+ institutions)"
+    - "Cross-sector range — healthcare, defense/DOE, academic medicine, real estate"
+    - "Process design, dashboard development (Power BI, Tableau, SQL)"
+    - "Harvard-certified corporate sustainability and innovation lens with ESG-oriented framing"
   proof_points:
     - name: "Harvard Medical School Initiative"
-      url: ""
-      hero_metric: "Led a $4.5M multi-stakeholder program redesign initiative"
-    - name: "KSW Real Estate Roadmap"
-      url: ""
-      hero_metric: "Contributed to more than $14M in savings and cost avoidance"
-  # Optional: dashboard/demo URL with credentials
-  # dashboard:
-  #   url: "https://janesmith.dev/demo"
-  #   password: "demo-2026"
+      hero_metric: "Led $4.5M multi-stakeholder academic medicine program, 10+ institutions"
+    - name: "KSW Real Estate Strategic Roadmap"
+      hero_metric: "$14M+ in savings and cost avoidance; scaled portfolio 350% (2→7 properties)"
+    - name: "Ideagen DevonWay — DOE/Defense"
+      hero_metric: "PM for $245K–$2.2M federal clients; 25% customer satisfaction increase"
+    - name: "Wellstar Total Rewards"
+      hero_metric: "Enterprise analytics supporting labor optimization across health system"
 
 compensation:
-  target_range: "$200K+"     # Replace with your target total comp
+  target_range: "$200K+"
   currency: "USD"
-  minimum: "$200K"               # Replace with your walk-away number
-  location_flexibility: "Open to Atlanta-based and remote opportunities"
+  minimum: "$200K"
+  location_flexibility: "Atlanta, GA or 100% remote. No relocation."
 
 location:
   country: "United States"
   city: "Atlanta"
-  timezone: "America/New_York"
-  visa_status: "U.S. citizen"
-  # For remote roles outside your country:
-  # onsite_availability: "1 week/month in any city"
+  state: "GA"
+  timezone: "ET"
+  visa_status: "U.S. citizen — no sponsorship needed"
+  remote_preference: "Atlanta-based or 100% remote only"
+
+deal_breakers:
+  - "Below $200K total comp"
+  - "Relocation required"
+  - "On-site only outside Atlanta"

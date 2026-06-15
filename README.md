@@ -68,7 +68,7 @@ Built by someone who used it to evaluate 740+ job offers, generate 100+ tailored
 | **6-Block Evaluation** | Role summary, CV match, level strategy, comp research, personalization, interview prep (STAR+R) |
 | **Interview Story Bank** | Accumulates STAR+Reflection stories across evaluations -- 5-10 master stories that answer any behavioral question |
 | **Negotiation Scripts** | Salary negotiation frameworks, geographic discount pushback, competing offer leverage |
-| **ATS PDF Generation** | Keyword-injected CVs with Space Grotesk + DM Sans design |
+| **ATS PDF Generation** | Keyword-injected CVs with profile-selectable HTML templates and ATS-safe styling |
 | **Portal Scanner** | 45+ companies pre-configured (Anthropic, OpenAI, ElevenLabs, Retool, n8n...) + custom queries across Ashby, Greenhouse, Lever, Wellfound |
 | **Batch Processing** | Parallel evaluation with `claude -p` workers |
 | **Dashboard TUI** | Terminal UI to browse, filter, and sort your pipeline |
@@ -107,6 +107,10 @@ claude   # Open Claude Code in this directory
 ```
 
 > **The system is designed to be customized by Claude itself.** Modes, archetypes, scoring weights, negotiation scripts -- just ask Claude to change them. It reads the same files it uses, so it knows exactly what to edit.
+
+Resume formatting is template-driven. Set `documents.resume_template` in `config/profile.yml` to keep a preferred visual format while still rewriting the resume content for each role.
+
+For strong-fit roles that need more narrative support than a resume alone, career-ops also supports role-specific submission packages: tailored decks, appendix artifacts, and public static presentation URLs. See [docs/SUBMISSION-DOCUMENTS.md](docs/SUBMISSION-DOCUMENTS.md).
 
 See [docs/SETUP.md](docs/SETUP.md) for the full setup guide.
 
@@ -198,8 +202,10 @@ career-ops/
 │   └── ...
 ├── templates/
 │   ├── cv-template.html         # ATS-optimized CV template
+│   ├── presentation-role-deck-template.html  # Reusable role-specific deck template
 │   ├── portals.example.yml      # Scanner config template
 │   └── states.yml               # Canonical statuses
+├── submission documents/        # Working assets for role-specific decks and attachments
 ├── batch/
 │   ├── batch-prompt.md          # Self-contained worker prompt
 │   └── batch-runner.sh          # Orchestrator script
@@ -211,6 +217,35 @@ career-ops/
 ├── docs/                        # Setup, customization, architecture
 └── examples/                    # Sample CV, report, proof points
 ```
+
+## Submission Packages
+
+For strong-fit roles, the expected output may be more than a resume.
+
+Typical package:
+
+- evaluation report in `reports/`
+- tailored resume HTML + PDF in `output/`
+- optional role-specific deck
+- optional public deck URL
+- optional appendix artifacts
+
+Use cases:
+
+- strategy roles
+- operations roles
+- program leadership roles
+- partner / GTM strategy roles
+- AI transformation roles
+- roles where a systems case study materially improves the application
+
+Rules:
+
+- do not create full submission packages for weak-fit roles by default
+- never submit the application automatically
+- reuse the checked-in role deck template instead of redesigning from scratch
+
+See [docs/SUBMISSION-DOCUMENTS.md](docs/SUBMISSION-DOCUMENTS.md) for the full protocol.
 
 ## Tech Stack
 

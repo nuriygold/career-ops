@@ -18,7 +18,8 @@ Eres un worker de evaluación de ofertas de empleo for the candidate (read name 
 | llms.txt | `llms.txt (if exists)` | SIEMPRE |
 | article-digest.md | `article-digest.md (project root)` | SIEMPRE (proof points) |
 | i18n.ts | `i18n.ts (if exists, optional)` | Solo entrevistas/deep |
-| cv-template.html | `templates/cv-template.html` | Para PDF |
+| cv-template.html | `templates/cv-template.html` | Template default para PDF |
+| cv-template-executive-clean.html | `templates/cv-template-executive-clean.html` | Template alternativo si `documents.resume_template: executive-clean` |
 | generate-pdf.mjs | `generate-pdf.mjs` | Para PDF |
 
 **REGLA: NUNCA escribir en cv.md ni i18n.ts.** Son read-only.
@@ -228,7 +229,9 @@ Donde `{company-slug}` es el nombre de empresa en lowercase, sin espacios, con g
 8. Reordena bullets de experiencia por relevancia al JD
 9. Construye competency grid (6-8 keyword phrases)
 10. Inyecta keywords en logros existentes (**NUNCA inventa**)
-11. Genera HTML completo desde template (lee `templates/cv-template.html`)
+11. Genera HTML completo desde template. Lee `config/profile.yml` primero:
+   - si `documents.resume_template: executive-clean` → usa `templates/cv-template-executive-clean.html`
+   - si no hay preferencia → usa `templates/cv-template.html`
 12. Escribe HTML a `/tmp/cv-candidate-{company-slug}.html`
 13. Ejecuta:
 ```bash
@@ -250,10 +253,8 @@ node generate-pdf.mjs \
 **Diseño:**
 - Fonts: Space Grotesk (headings, 600-700) + DM Sans (body, 400-500)
 - Fonts self-hosted: `fonts/`
-- Header: Space Grotesk 24px bold + gradiente cyan→purple 2px + contacto
-- Section headers: Space Grotesk 13px uppercase, color cyan `hsl(187,74%,32%)`
-- Body: DM Sans 11px, line-height 1.5
-- Company names: purple `hsl(270,70%,45%)`
+- Mantener layout single-column ATS-safe
+- Si `documents.resume_template: executive-clean`, usar jerarquía ejecutiva limpia: nombre prominente, línea de contacto más ligera, headers consistentes, spacing sobrio, sin clutter
 - Márgenes: 0.6in
 - Background: blanco
 
@@ -262,7 +263,7 @@ node generate-pdf.mjs \
 - NUNCA añadir skills the candidate doesn't have
 - Ejemplo: JD dice "RAG pipelines" y CV dice "LLM workflows with retrieval" → "RAG pipeline design and LLM orchestration workflows"
 
-**Template placeholders (en cv-template.html):**
+**Template placeholders (en ambos templates HTML):**
 
 | Placeholder | Contenido |
 |-------------|-----------|
@@ -270,6 +271,7 @@ node generate-pdf.mjs \
 | `{{PAGE_WIDTH}}` | `8.5in` (letter) o `210mm` (A4) |
 | `{{NAME}}` | (from profile.yml) |
 | `{{EMAIL}}` | (from profile.yml) |
+| `{{PHONE}}` | (from profile.yml) |
 | `{{LINKEDIN_URL}}` | (from profile.yml) |
 | `{{LINKEDIN_DISPLAY}}` | (from profile.yml) |
 | `{{PORTFOLIO_URL}}` | (from profile.yml) |

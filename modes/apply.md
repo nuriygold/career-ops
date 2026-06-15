@@ -53,6 +53,7 @@ Identificar TODAS las preguntas visibles:
 - Yes/No (relocation, visa, etc.)
 - Campos de salario (range, expectation)
 - Upload fields (resume, cover letter PDF)
+- Portfolio / additional materials fields: use the portfolio deck from `config/profile.yml` whenever the form accepts a link or upload
 
 Clasificar cada pregunta:
 - **Ya respondida en Section G** → adaptar la respuesta existente
@@ -67,6 +68,7 @@ Para cada pregunta, generar la respuesta siguiendo:
 3. **Tono "I'm choosing you"**: Mismo framework del auto-pipeline
 4. **Especificidad**: Referenciar algo concreto del JD visible en pantalla
 5. **career-ops proof point**: Incluir en "Additional info" si hay campo para ello
+6. **Portfolio deck**: Si hay campo de portfolio, website, o additional materials, incluir `Aaliya Bashir Portfolio Presentation` from `config/profile.yml`
 
 **Formato de output:**
 

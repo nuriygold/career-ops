@@ -47,6 +47,18 @@ The key point: Codex support is additive. It should route into the existing
 Career-Ops modes and scripts rather than introducing a parallel automation
 layer.
 
+## Resume Template Selection
+
+When generating a resume PDF:
+
+- Read `config/profile.yml` first.
+- If `documents.resume_template` is set, use the matching HTML template in `templates/`.
+- Keep the design stable, but rewrite the actual resume content for each job description.
+
+Current named template:
+
+- `executive-clean` -> `templates/cv-template-executive-clean.html`
+
 ## Behavioral Rules
 
 - Treat raw JD text or a job URL as the full auto-pipeline path unless the user explicitly asks for evaluation only.
@@ -54,6 +66,7 @@ layer.
 - Never verify a job’s live status with generic web fetch when Playwright is available.
 - Never submit an application for the user.
 - Never add new tracker rows directly to `data/applications.md`; use the TSV addition flow and `merge-tracker.mjs`.
+- If the user asks for decks, public role pages, or extra application artifacts, read `docs/SUBMISSION-DOCUMENTS.md` and follow its location and qualification rules.
 
 ## Verification
 

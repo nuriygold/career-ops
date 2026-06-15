@@ -238,6 +238,17 @@ Default modes are in `modes/` (English). Additional language-specific modes are 
 - `article-digest.md` has detailed proof points (optional)
 - **NEVER hardcode metrics** -- read them from these files at evaluation time
 
+### Submission Documents
+
+If the user asks for decks, public presentation links, application attachments, or a broader employer-facing package, read `docs/SUBMISSION-DOCUMENTS.md`.
+
+Rules:
+- treat role-specific decks and appendix artifacts as part of the application pipeline only for strong-fit roles or explicit user request
+- keep working deck assets in `submission documents/`
+- keep final resumes in `output/`
+- keep reusable presentation structures in `templates/`
+- prefer reusing `templates/presentation-role-deck-template.html` over inventing a new deck structure each time
+
 ---
 
 ## Ethical Use -- CRITICAL

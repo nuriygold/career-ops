@@ -52,6 +52,10 @@ claude
 
 Then paste a job offer URL or description. Career-ops will automatically evaluate it, generate a report, create a tailored PDF, and track it.
 
+## Submission Packages
+
+For strong-fit roles, the workflow can go beyond evaluation and resume generation. Career-ops can also produce a fuller submission package with a tailored resume, role-specific deck, appendix artifacts, and a public presentation URL when needed. See [docs/SUBMISSION-DOCUMENTS.md](SUBMISSION-DOCUMENTS.md) for the rules on which roles qualify, what to create, and where each artifact should live.
+
 ## Available Commands
 
 | Action | How |

@@ -14,7 +14,8 @@
     "update": "node update-system.mjs apply",
     "rollback": "node update-system.mjs rollback",
     "liveness": "node check-liveness.mjs",
-    "scan": "node scan.mjs"
+    "scan": "node scan.mjs",
+    "slides": "python3 -m http.server 4173 --directory \"submission documents/home-lab-slideshow\""
   },
   "keywords": [
     "ai",
