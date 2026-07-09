@@ -181,7 +181,7 @@ Use Canva when the user specifically wants:
 
 Important:
 
-- Local files under `/Users/...` are not directly usable by Canva unless uploaded as Canva assets.
+- Local files on your machine are not directly usable by Canva unless uploaded as Canva assets.
 - If using Canva, screenshots and resume images need to be uploaded into Canva first.
 - Always confirm draft edits before committing the Canva transaction.
 
