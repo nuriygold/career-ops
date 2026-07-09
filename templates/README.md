@@ -7,9 +7,8 @@ System-layer template files used by career-ops scripts and modes. These files ar
 | File | Used By | Purpose |
 |------|---------|---------|
 | `cv-template.html` | `generate-pdf.mjs` | HTML/CSS template for ATS-optimized CV PDFs |
-| `cv-template-executive-clean.html` | `generate-pdf.mjs` | Clean executive resume template with stronger hierarchy and ATS-safe styling |
-| `presentation-role-deck-template.html` | manual deck editing / static publishing | Reusable 12-slide HTML deck template for role-specific presentation variants |
-| `presentation-role-deck-template.md` | manual deck editing | Guide for adapting the presentation template by role without rebuilding structure |
+| `resume-template.html` | `generate-pdf.mjs` (via `--template`) | Resume-branded variant of `cv-template.html`. Same layout and placeholder tokens; differs in: `<title>` reads "Resume" instead of "CV", omits Certifications section, targets 1–2 page US/industry format. See detailed section below. |
+| `cv-template.tex` | `generate-latex.mjs` | LaTeX/Overleaf template for ATS-optimized CV PDFs |
 | `portals.example.yml` | Onboarding | Example portal scanner configuration (copy to `portals.yml` to activate) |
 | `states.yml` | `verify-pipeline.mjs`, `normalize-statuses.mjs`, `merge-tracker.mjs` | Canonical application states and their aliases |
 
@@ -21,17 +20,36 @@ The HTML template rendered by Playwright into PDF. Uses placeholder tokens (`{{N
 
 **Customization:** Edit this file to change colors, spacing, or section order. The placeholder tokens are documented in `batch/batch-prompt.md` under "Template placeholders."
 
-### cv-template-executive-clean.html
+### resume-template.html
 
-An alternate single-column template with stronger visual hierarchy: prominent name, lighter contact line, consistent section dividers, restrained typography, and compact recruiter-friendly scanning. Select it by setting `documents.resume_template: executive-clean` in `config/profile.yml`.
+Resume-branded variant of `cv-template.html` for US/industry job applications. Key differences from the CV template:
 
-### presentation-role-deck-template.html
+- **Title** reads "Resume" instead of "CV"
+- **No Certifications section** — resumes focus on recent, relevant experience
+- **Designed for 1–2 pages** — omits academic-style sections
 
-A reusable static HTML slide deck derived from the current business-operations and partner-strategy deck variants. Uses placeholder tokens such as `{{TARGET_FUNCTION}}`, `{{OPERATING_PROBLEM_HEADLINE}}`, and `{{SLIDE10_TITLE}}` so a new role-specific deck can be created by editing copy rather than redesigning slides.
+Otherwise uses the same placeholder tokens (`{{NAME}}`, `{{SUMMARY_TEXT}}`, etc.) and is fully compatible with the existing PDF pipeline.
 
-### presentation-role-deck-template.md
+**Keep in sync:** When updating `cv-template.html`, apply matching changes to `resume-template.html` (preserving the differences noted above).
 
-Companion guide for the deck template. Explains which slides should stay stable, which slides should be rewritten for each role family, and how to adapt the deck for business-operations versus partner-strategy narratives.
+### cv-template.tex
+
+LaTeX template for Overleaf-compatible CV generation. Based on the [sb2nov/resume](https://github.com/sb2nov/resume) format. Uses placeholder tokens (`{{NAME}}`, `{{EXPERIENCE}}`, `{{PROJECTS}}`, etc.) that the LaTeX pipeline fills at generation time.
+
+**Design:** Single-column ATS-safe layout using standard CTAN packages (`fontawesome5`, `enumitem`, `hyperref`, `titlesec`). No custom fonts or external dependencies — uploads directly to Overleaf.
+
+**Usage:**
+```bash
+# Validate and compile .tex → .pdf (requires pdflatex on PATH)
+node generate-latex.mjs output/cv-name-company-date.tex
+
+# Or specify a custom output path
+node generate-latex.mjs output/cv-name-company-date.tex output/custom-name.pdf
+```
+
+**Prerequisites:** `pdflatex` via [MiKTeX](https://miktex.org/) (Windows) or TeX Live (Linux/macOS). First compilation may auto-install missing LaTeX packages. Alternatively, upload the `.tex` file directly to [Overleaf](https://www.overleaf.com) — no local install needed.
+
+**Customization:** Edit this file to change margins, section order, or formatting commands. The placeholder tokens are documented in `modes/latex.md` under "Template Placeholders."
 
 ### portals.example.yml
 
@@ -41,6 +59,6 @@ Pre-configured portal scanner with 45+ tracked companies and search queries. Con
 
 ### states.yml
 
-Defines the 8 canonical application states (`Evaluated`, `Applied`, `Responded`, `Interview`, `Offer`, `Rejected`, `Discarded`, `SKIP`) with aliases for common variants. All pipeline scripts validate statuses against this file.
+Defines the 9 canonical application states (`Evaluated`, `Applied`, `Responded`, `Interview`, `Offer`, `Hired`, `Rejected`, `Discarded`, `SKIP`) with aliases for common variants. All pipeline scripts validate statuses against this file.
 
 **Do not rename states** -- the dashboard and all scripts depend on these exact IDs. You can add aliases if you encounter new variants that should map to an existing state.
