@@ -7,7 +7,7 @@
 - Google Calendar: searched the bounded July 1–September 30 window for Intuit and Salesforce events.
 - Tracker: employer outcomes were applied through `set-status.mjs`.
 - ATS/browser: Playwright launch failed in this sandbox (`Permission denied`), so no portal state was inferred.
-- LinkedIn/contact discovery: not run; no follow-up draft was eligible before the ATS access-point review completed.
+- LinkedIn/contact discovery: public contact-route research completed for the remaining AI-agent-owned roles; no direct recruiter email was assumed where one was not published.
 - No email, LinkedIn message, or application was sent.
 
 ## Confirmed employer outcomes
@@ -26,6 +26,10 @@
 - Intuit interview rows remain concrete AI-agent work: retry ATS outcome checks when browser access is available; Gmail and Calendar found no role-specific outcome.
 - Salesforce remains a human-decision item because deciding whether to pursue a personal follow-up requires Aaliya's approval; no draft was created.
 - Older applied rows with receipts but no decision remain assigned to AI Agents Team to retry the ATS check with a working browser integration.
+
+## Follow-up execution update
+
+ATS verification is no longer a gate. Channel-ready follow-up drafts for the remaining AI-agent-owned roles are in `output/ai-agents-follow-up-drafts-2026-09-02.md`. The next concrete step is recipient/channel review and routing to Aaliya for approval; nothing has been sent.
 
 ## Guardrails applied
 
