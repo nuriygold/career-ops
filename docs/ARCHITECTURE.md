@@ -56,6 +56,33 @@ system/user data-contract layers live in [../ARCHITECTURE.md](../ARCHITECTURE.md
 8. **Track**: New entries via TSV in `batch/tracker-additions/` merged by
    `merge-tracker.mjs`; status updates to existing rows via `set-status.mjs`
 
+## Application lifecycle and live operations
+
+The application lifecycle is:
+
+`Discovered → Verified → Evaluated → Prepared → Human Review → Applied → Contact Discovery → Follow-up Sent → Watchdog Monitoring → Responded → Interview → Offer → Review/Negotiate → Hired`
+
+`Rejected`, `Discarded`, and `SKIP` are terminal exits. The post-submission stage is
+deliberately split:
+
+1. **Contact Discovery** — AI agents find and record a dependable organization
+   contact, preferring a recruiter, hiring manager, department leader, or executive
+   over an unverified address.
+2. **Follow-up Sent** — after two business days, the scheduled worker prepares and
+   sends a tailored follow-up through the connected Gmail account when prerequisites
+   pass. The send, recipient, and timestamp are logged. This is the only outbound
+   send authorized by default; applying and portal submission remain human-gated.
+3. **Watchdog Monitoring** — AI agents check Gmail and relevant portals for replies,
+   decisions, interview invitations, requests, and status changes. They update the
+   action queue and route substantive response decisions to the human.
+
+The repository tracker (`data/applications.md`) is the auditable local record. When a
+Google Sheets tracker is connected, it is the transparent operational view for live
+work: the application tab mirrors application state, `Open Action Items` owns the
+work queue, and `Dashboard` summarizes both. Owners belong to action-item rows, not
+roles; dashboard owner counts therefore count action items. A tracker update must
+refresh both the local record and the connected Sheet.
+
 ## Batch Processing
 
 The batch system processes multiple offers in parallel:

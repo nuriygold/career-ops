@@ -166,3 +166,34 @@ that already cleared a free title/location filter.
   separate and stack on top.
 - **Nothing new to install.** `node scan.mjs` already ships; the triage is a prompt,
   not a dependency.
+
+## 3. Application follow-up automation
+
+Scanning finds roles; it does not manage submitted applications. For every row that
+reaches `Applied`, create three separate action items in `Open Action Items`:
+
+1. **Contact discovery** — AI agents research a dependable recruiter, hiring
+   manager, department leader, or executive contact and record the evidence.
+2. **Follow-up send** — the scheduler uses the application date plus two business
+   days (Monday–Friday) as the due time. The agent drafts a role-specific message,
+   validates the recipient and account, and sends it through the connected Gmail
+   integration. Record the recipient, timestamp, and message/thread identifier.
+3. **Watchdog monitoring** — AI agents check Gmail and the relevant application
+   portal for replies, decisions, interview invitations, requests, or status changes.
+   They classify the evidence and route substantive replies or decisions to Aaliya.
+
+The scheduled follow-up send is authorized only for this narrow, post-submission
+message. It must never click Apply or Submit, send an application, or send a
+substantive reply to an employer. If Gmail authentication, contact evidence, or
+recipient validation is missing, leave the send unsent and create or update an
+action item explaining the blocker. Never mark a follow-up as sent without a
+confirmed Gmail result.
+
+### Google Sheets operating view
+
+When connected, the Google Sheet is the shared, editable control surface for live
+operations. Keep `data/applications.md` and the local logs as the auditable repo
+layer, but synchronize both whenever the tracker changes. Use the `Open Action Items`
+tab for item-level work (`Priority`, `Tracker #`, `Company`, `Role`, `Current status`,
+`Open action`, `Evidence / checkpoint`, `Owner`, `Clear`). The `Dashboard` reads from
+those tabs; its ownership metrics count action-item rows, not roles or applications.
