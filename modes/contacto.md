@@ -5,8 +5,9 @@
 This mode has two variants that share the same persona engine (recruiter → hard
 requirements; hiring manager → impact/vision):
 
-- **LinkedIn power move** (default) — find contacts and draft a ≤300-char message
-  tied to a specific application/interview. This is the flow below.
+- **LinkedIn power move** (default) — find contacts, draft a ≤300-char message,
+  and send it when explicitly requested, tied to a specific application/interview.
+  This is the flow below.
 - **Greeting** — a single ultra-short first-touch message for platforms with a hard
   character budget (BOSS Zhipin 打招呼, job-board chat, a cold-email opener). No
   contact discovery. See **Greeting variant** at the end of this file.
@@ -60,6 +61,10 @@ short message; otherwise run the LinkedIn power move below.
    - ES (if Spanish company)
 
 6. **Alternative targets** with justification for why they are good second choices
+
+7. **Send when requested**: when the user explicitly asks to send the message,
+   send the approved message through the selected communication channel and
+   record the result for the associated application.
 
 **Contact channel preference:** Read `contact_preferences.preferred_channel` from
 `config/profile.yml`. If it is absent or set to `"either"`, write the CTA
