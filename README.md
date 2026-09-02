@@ -289,6 +289,19 @@ npm run gemini:eval -- "JD text here"
 
 > **Free tier:** Both options work without billing. Native CLI uses Google OAuth; the API script uses `gemini-3.6-flash` (rate limits are model- and tier-dependent; see Google AI docs for current quotas).
 
+### Google Sheets tracker mirror
+
+`data/applications.md` is the canonical tracker. Authorize Sheets once with `node sheets-oauth-setup.mjs`, then run:
+
+```bash
+node tracker-sync.mjs push
+node tracker-sync.mjs check
+node tracker-sync.mjs watch --interval 60
+node tracker-sync.mjs watch --interval 60 --repair
+```
+
+Set `CAREER_OPS_SHEETS_SYNC=1` in `.env` to make `merge-tracker.mjs` and `set-status.mjs` perform a best-effort push after successful local writes. The sync updates only application columns A:I and preserves Sheet-only lifecycle, Dashboard, Definitions, and action-item data. Sheet edits are reported as drift rather than imported over the markdown source of truth. Configure `GOOGLE_SHEETS_TRACKER_URL`, `GOOGLE_SHEETS_TRACKER_TAB`, and `GOOGLE_SHEETS_TRACKER_RANGE` to override defaults.
+
 ## Usage
 
 career-ops uses a shared command router. In CLIs that register slash commands, it looks like this:

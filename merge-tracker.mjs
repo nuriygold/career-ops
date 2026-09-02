@@ -23,6 +23,7 @@ import { roleFuzzyMatch } from './role-matcher.mjs';
 import { parsePdfIndex } from './find.mjs';
 import { LEGACY_COLMAP, detectColumns, resolveScoreStatus, normalizeVia } from './tracker-parse.mjs';
 import { resolveTrackerPath, trackerLockDirFor, acquireTrackerLock, writeFileAtomic, normalizeCompany, cell } from './tracker-utils.mjs';
+import { runAutoSync } from './tracker-sync-hook.mjs';
 
 const CAREER_OPS = dirname(fileURLToPath(import.meta.url));
 // Support both layouts: data/applications.md (boilerplate) and applications.md
@@ -758,6 +759,11 @@ if (!DRY_RUN) {
 console.log(`\n📊 Summary: +${added} added, 🔄${updated} updated, ⏭️${skipped} skipped`);
 if (DRY_RUN) console.log('(dry-run — no changes written)');
 trackerLock.release();
+
+// Keep the connected Sheet as a derived mirror when explicitly enabled. This
+// is best-effort: a local tracker merge must not be lost because OAuth or the
+// network is unavailable.
+if (!DRY_RUN) runAutoSync();
 
 // Sync PDF flags (idempotent; uses its own lock/transaction)
 if (!DRY_RUN) {

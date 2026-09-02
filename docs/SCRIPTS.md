@@ -761,3 +761,9 @@ Runs:       — no data (data/scan-runs.tsv missing; created by the next scan)
 * `filtered_blacklist` — skipped because the company is on your `data/blacklist.md` do-not-apply list (#1742)
 
 As the project is in continuous development, to parse for a stat we recommend doing it by column header instead of position.
+
+---
+
+## tracker-sync.mjs
+
+Mirrors the canonical `data/applications.md` application table into the configured Google Sheet. Run `node sheets-oauth-setup.mjs` once before the first push, then use `node tracker-sync.mjs push`, `check`, or `watch --interval 60`. `watch --repair` repairs detected drift from markdown. Set `CAREER_OPS_SHEETS_SYNC=1` to have `merge-tracker.mjs` and `set-status.mjs` perform best-effort pushes after local writes. The sync updates only columns A:I and preserves Sheet-only columns and tabs.

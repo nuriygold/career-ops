@@ -49,6 +49,7 @@ import {
   rebuildRow, resolveTrackerPath, trackerLockDirFor, acquireTrackerLock,
   writeFileAtomic, loadCanonicalStates, resolveCanonicalState, normalizeCompany, cell,
 } from './tracker-utils.mjs';
+import { runAutoSync } from './tracker-sync-hook.mjs';
 
 const CAREER_OPS = dirname(fileURLToPath(import.meta.url));
 const STATES_FILE = join(CAREER_OPS, 'templates/states.yml');
@@ -367,6 +368,8 @@ if (changed && !flags.dryRun) {
   }
 }
 lock?.release();
+
+if (changed && !flags.dryRun) runAutoSync();
 
 // ── report ───────────────────────────────────────────────────────
 
