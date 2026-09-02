@@ -2,6 +2,8 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 53 | 2026-09-02 | GitLab | Chief of Staff, CRO | N/A | Applied | ❌ | - | Submitted 2026-09-02 (user-confirmed). MD package: output/gitlab-chief-of-staff-cro-resume.md + cover letter. Scored 3.6/5 in sheet tracker (Medium priority). Contact via Greenhouse portal. |
+| 54 | 2026-09-02 | Patriot Growth Insurance Services | Director of Strategic Initiatives | N/A | Applied | ❌ | - | Submitted 2026-09-02 (user-confirmed). MD package: output/patriot-growth-director-strategic-initiatives-resume.md + cover letter. Scored 4.1/5 in sheet tracker (High priority). Contact via company portal. |
 | 50 | 2026-09-02 | The Home Depot | Sr. Director, Program Management - CX | N/A | Applied | ❌ | - | Submitted 2026-09-02 (user-confirmed). MD package: output/home-depot-sr-director-program-management-cx-resume.md + cover letter. Scored 3.6/5 in sheet tracker (Medium priority). Contact via Greenhouse portal. |
 | 51 | 2026-09-02 | Ethos Life | Director, Strategy & Operations, Consumer | N/A | Applied | ❌ | - | Submitted 2026-09-02 (user-confirmed). MD package: output/ethos-life-director-strategy-operations-consumer-resume.md + cover letter. Scored 3.5/5 in sheet tracker (Medium priority). Contact via company portal. |
 | 52 | 2026-09-02 | PHIL | Director of Business Operations, Client Optimization | N/A | Applied | ❌ | - | Submitted 2026-09-02 (user-confirmed). MD package: output/phil-director-business-operations-client-optimization-resume.md + cover letter. Scored 3.7/5 in sheet tracker (Medium priority). Contact via company portal. |
