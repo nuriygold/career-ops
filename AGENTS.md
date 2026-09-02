@@ -131,7 +131,13 @@ When the user asks to update the tracker, the agent must:
    application tab's `Lifecycle stage` field, `Definitions`, `Dashboard`, and the
    `Application Lifecycle` tab. The lifecycle tab must contain the full SOP plus a
    live application-by-application stage map; it is not a static illustration.
-6. Re-read every written range, confirm formulas have no spill errors, confirm every
+6. The `Open Action Items` tab must preserve its curated rows and keep the
+   auto-generated formula anchor in `A35`. That formula detects non-terminal tracker
+   rows whose IDs are not already in curated action rows `B2:B34` and spills default
+   action, owner, evidence, prompt, and Aaliya-step fields across the queue. Do not
+   overwrite the anchor or place manual rows inside its spill range; change the
+   generator logic when the default behavior needs to change.
+7. Re-read every written range, confirm formulas have no spill errors, confirm every
    populated action row has both prompts, and check wrapping/column widths at normal
    zoom. Then run `git diff --check`, the relevant repository verification, commit
    the SOP/schema changes, and push the branch when the user asks for portability.

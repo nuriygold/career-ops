@@ -197,3 +197,17 @@ layer, but synchronize both whenever the tracker changes. Use the `Open Action I
 tab for item-level work (`Priority`, `Tracker #`, `Company`, `Role`, `Current status`,
 `Open action`, `Evidence / checkpoint`, `Owner`, `Clear`). The `Dashboard` reads from
 those tabs; its ownership metrics count action-item rows, not roles or applications.
+
+### Automatic action-item generation
+
+The connected `Open Action Items` tab preserves curated rows in rows 2–34. Cell `A35`
+contains the generator anchor. Its formulas detect tracker IDs not already represented
+in the curated rows and create default action rows for every non-terminal application.
+The generated rows include priority, tracker identity, current status, open action,
+evidence placeholder, owner, AI-agent prompt, Aaliya steps, and a blank `Clear` field.
+
+Do not add manual rows inside the generator's spill range or overwrite `A35`. To change
+the default behavior, update the generator formula and this SOP together. Terminal
+states (`Rejected`, `Discarded`, `SKIP`, and `Hired`) are excluded automatically. The
+Dashboard and the Application Lifecycle live map consume the generated rows without
+additional manual updates.
