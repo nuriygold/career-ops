@@ -52,6 +52,8 @@ Jan 2025 - Jul 2026
 **Program Manager**
 Jan 2023 - Jan 2025
 
+Concurrent professional engagement alongside Ideagen DevonWay.
+
 - Led a $4.5M, multi-stakeholder academic medicine initiative spanning 10+ institutions, hospital partners, educators, and internal leadership groups.
 - Established governance, operating rhythms, decision frameworks, communication plans, and execution milestones for a politically sensitive, high-visibility program.
 - Balanced institutional strategy, long-range value creation, fiscal planning, stakeholder priorities, and operational delivery.
@@ -61,6 +63,8 @@ Jan 2023 - Jan 2025
 ### Ideagen DevonWay, Remote
 **Technical Project Manager**
 Nov 2022 - Jan 2024
+
+Concurrent professional engagement alongside Harvard Medical School.
 
 - Directed SaaS implementations for Department of Energy, defense, and regulated-industry clients with project budgets ranging from $245K to $2.2M.
 - Owned client-facing program communication across scope, schedule, risk, dependencies, issue resolution, and executive status reporting.
