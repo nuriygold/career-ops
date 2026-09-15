@@ -18,7 +18,7 @@ Strategic programs, technical operations, and AI systems leader with 16+ years o
 ## Leadership Impact
 
 - Led a $4.5M academic medicine initiative spanning 10+ institutions, hospital partners, educators, and senior stakeholders.
-- Directed $245K-$2.2M SaaS implementations for Department of Energy, defense, and regulated-industry clients.
+- Directed $245K–$2.2M SaaS implementations for Department of Energy, defense, and regulated-industry clients.
 - Developed a five-year operating and investment roadmap contributing to more than $14M in savings and cost avoidance.
 - Led and developed a 17-member team while improving customer satisfaction by 34% within six months.
 - Increased client satisfaction by 25% through stronger communication, delivery alignment, and issue-resolution practices.
@@ -42,7 +42,7 @@ Strategic programs, technical operations, and AI systems leader with 16+ years o
 
 ### Wellstar Health System, Atlanta, GA
 **Technical Program Manager - Total Rewards**
-Jan 2025 - Jul 2026
+Jan 2025 – Jul 2026
 
 - Led enterprise Total Rewards and Labor Optimization work by translating complex workforce, benefits, utilization, and labor data into executive dashboards, decision materials, and action-oriented recommendations.
 - Designed analytics and storytelling frameworks connecting people-program investments to ROI, utilization, operational efficiency, workforce experience, and organizational value.
@@ -52,9 +52,9 @@ Jan 2025 - Jul 2026
 
 ### Harvard Medical School, Remote
 **Program Manager**
-Jan 2023 - Jan 2025
+Jan 2023 – Jan 2025
 
-Concurrent SME Consulting.
+Concurrent SME consulting engagement
 
 - Led a $4.5M, multi-stakeholder academic medicine initiative spanning 10+ institutions, hospital partners, educators, and internal leadership groups.
 - Established governance, operating rhythms, decision frameworks, communication plans, and execution milestones for a politically sensitive, high-visibility program.
@@ -64,9 +64,9 @@ Concurrent SME Consulting.
 
 ### Ideagen DevonWay, Remote
 **Technical Project Manager**
-Nov 2022 - Jan 2024
+Nov 2022 – Jan 2024
 
-Concurrent SME Consulting.
+Concurrent SME consulting engagement
 
 - Directed SaaS implementations for Department of Energy, defense, and regulated-industry clients with project budgets ranging from $245K to $2.2M.
 - Owned client-facing program communication across scope, schedule, risk, dependencies, issue resolution, and executive status reporting.
@@ -75,7 +75,7 @@ Concurrent SME Consulting.
 
 ### Warrior Body Spa, Tucker, GA
 **Director of Operations**
-2014 - 2022
+2014–2022
 
 - Directed operations, systems, customer experience, staffing, process improvement, and performance management for a growing service business.
 - Led and developed a 17-member team while improving customer satisfaction by 34% within six months.
@@ -84,14 +84,14 @@ Concurrent SME Consulting.
 
 ### KSW Real Estate, Atlanta, GA
 **Project Manager, Real Estate Operations**
-2010 - 2014
+2010–2014
 
 - Developed a five-year operating and investment roadmap contributing to more than $14M in savings and cost avoidance.
-- Supported portfolio expansion from two to seven properties, supporting 350% portfolio growth through disciplined planning, financial analysis, and execution management.
+- Supported portfolio expansion from two to seven properties, contributing to 350% portfolio growth through disciplined planning, financial analysis, and execution management.
 
-## Independent Platform Engineering & AI Operations
+## Independent Platform Engineering & AI Operations | 2023–Present
 
-**AI-Enabled Operations Ecosystem + Platform** | 2023-Present | Atlanta, GA
+**AI-Enabled Operations Ecosystem** | Atlanta, GA
 
 - Designed, built, and installed a recoverable AI-enabled production platform integrating compute, networking, storage, remote access, security, observability, automation, CI/CD, cloud services, APIs, MCP integrations, and local AI.
 - Architected distinct compute, network, data, security, automation, AI, and recovery planes across macOS, Debian Linux, Apple Silicon, Docker/Compose, Colima/Lima, PostgreSQL, Redis, Tailscale, Cloudflare Tunnel, self-hosted CI runners, and launchd-managed services.
@@ -99,7 +99,6 @@ Concurrent SME Consulting.
 - Built and installed a production OpenClaw watchdog running through macOS launchd every five minutes, monitoring local and public health endpoints and applying a staged recovery sequence with persistent state, file locking, cooldown protection, and sanitized logging.
 - Integrated Linux network infrastructure, Pi-hole, DNS, DHCP, SSH, Samba/SMB, NAS workflows, remote administration, cloud services, and private/public access boundaries into a recoverable operating model.
 - Established operational standards through preflight checks, rollback procedures, backup/restore requirements, runtime verification, storage monitoring, soak testing, and evidence-based health classification.
-
 - Built supporting AI and automation systems spanning agent orchestration, enterprise workflows, healthcare operations, dashboards, APIs, developer tooling, and secure integrations.
 
 ## Selected AI Product & Engineering Portfolio
@@ -118,7 +117,7 @@ Concurrent SME Consulting.
 - Data and storage: PostgreSQL, Redis, SQLite, Samba, SMB, mergerfs, SnapRAID
 - Delivery and source control: Git, GitHub Actions, GitHub CLI
 
-## Education And Credentials
+## Education & Credentials
 
 - Harvard University, Graduate Certificate, Corporate Sustainability and Innovation
 - Augusta University, Master of Public Administration
