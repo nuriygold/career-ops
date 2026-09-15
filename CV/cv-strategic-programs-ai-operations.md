@@ -4,9 +4,9 @@
 
 Atlanta, GA | bashiraaliya@gmail.com | +1-678-594-1031
 
-LinkedIn: https://www.linkedin.com/in/aaliya-bashir/  
-Portfolio: https://bus-ops-deck.vercel.app  
-Platform case study: https://aaliya-ai-ops-ecosystem.vercel.app  
+LinkedIn: https://www.linkedin.com/in/aaliya-bashir/
+Portfolio: https://bus-ops-deck.vercel.app
+Platform case study: https://aaliya-ai-ops-ecosystem.vercel.app
 GitHub: https://github.com/nuriygold
 
 ## Professional Summary
@@ -27,7 +27,7 @@ Strategic programs | Enterprise transformation | AI transformation | AI-enabled 
 ## Professional Experience
 
 ### Wellstar Health System, Atlanta, GA
-**Technical Program Manager - Total Rewards**  
+**Technical Program Manager - Total Rewards**
 Jan 2025 - Jul 2026
 
 - Led Total Rewards and Labor Optimization work, translating workforce, benefits, utilization, and labor data into executive dashboards, decision support, and action-oriented recommendations.
@@ -37,8 +37,8 @@ Jan 2025 - Jul 2026
 - Role ended in July 2026 as part of a layoff.
 
 ### Harvard Medical School, Remote
-**Program Manager**  
-Jan 2023 - Jan 2025  
+**Program Manager**
+Jan 2023 - Jan 2025
 Concurrent SME Consulting.
 
 - Led a $4.5M academic medicine initiative spanning 10+ institutions, hospital partners, educators, and internal leadership groups.
@@ -46,8 +46,8 @@ Concurrent SME Consulting.
 - Aligned diverse stakeholders around priorities, dependencies, risks, and institutional outcomes.
 
 ### Ideagen DevonWay, Remote
-**Technical Project Manager - Client Implementations**  
-Nov 2022 - Jan 2024  
+**Technical Project Manager - Client Implementations**
+Nov 2022 - Jan 2024
 Concurrent SME Consulting.
 
 - Directed SaaS implementations for Department of Energy, defense, and regulated-industry clients with budgets from $245K to $2.2M.
@@ -56,7 +56,7 @@ Concurrent SME Consulting.
 - Increased customer satisfaction by 25% through stronger delivery alignment, communication, and issue resolution.
 
 ### Warrior Body Spa, Tucker, GA
-**Director of Operations**  
+**Director of Operations**
 2014 - 2022
 
 - Directed operations, systems, staffing, customer experience, process improvement, and performance management for a growing operation.
@@ -64,7 +64,7 @@ Concurrent SME Consulting.
 - Redesigned CRM, scheduling, marketing, and service workflows to improve consistency, visibility, and scalability.
 
 ### KSW Real Estate, Atlanta, GA
-**Project Manager, Real Estate Operations**  
+**Project Manager, Real Estate Operations**
 2010 - 2014
 
 - Developed a five-year operating and investment roadmap contributing to more than $14M in savings and cost avoidance.
