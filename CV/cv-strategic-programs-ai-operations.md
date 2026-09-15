@@ -29,12 +29,12 @@ Strategic programs | Enterprise transformation | Operating-model design | Execut
 - Coordinated HR, finance, technical, operational, and executive stakeholders to clarify requirements and move priorities toward execution.
 
 ### Harvard Medical School — Program Manager | 2023-2025
-Concurrent professional engagement alongside Ideagen DevonWay.
+Concurrent SME Consulting.
 - Led a $4.5M academic medicine initiative spanning 10+ institutions, hospital partners, educators, and internal leadership groups.
 - Established governance, operating rhythms, decision frameworks, communication plans, and execution milestones for high-visibility work.
 
 ### Ideagen DevonWay — Technical Project Manager | 2022-2024
-Concurrent professional engagement alongside Harvard Medical School.
+Concurrent SME Consulting.
 - Directed SaaS implementations for DOE, defense, and regulated-industry clients with budgets from $245K to $2.2M.
 - Owned scope, schedule, risk, dependencies, executive reporting, and issue resolution across sales, product, engineering, implementation, and customer teams.
 - Increased customer satisfaction by 25% through stronger delivery alignment and communication.

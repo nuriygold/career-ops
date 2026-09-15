@@ -36,7 +36,7 @@ Jan 2025 - Jul 2026
 **Program Manager**
 Jan 2023 - Jan 2025
 
-Concurrent professional engagement alongside Ideagen DevonWay.
+Concurrent SME Consulting.
 
 - Led a $4.5M program across 10+ institutions and multiple stakeholder groups, including hospital partners, educators, and internal leadership.
 - Established governance, operating rhythms, decision rights, communication plans, escalation paths, and execution milestones.
@@ -46,7 +46,7 @@ Concurrent professional engagement alongside Ideagen DevonWay.
 **Technical Project Manager - Client Implementations**
 Nov 2022 - Jan 2024
 
-Concurrent professional engagement alongside Harvard Medical School.
+Concurrent SME Consulting.
 
 - Directed SaaS implementations for Department of Energy, defense, and regulated-industry clients with project budgets ranging from $245K to $2.2M.
 - Owned client-facing communication across scope, schedule, risk, dependencies, issue resolution, and executive status reporting.
