@@ -16,19 +16,19 @@ Workforce strategy and enterprise transformation leader with 16+ years of experi
 
 - Led Total Rewards and Labor Optimization work connecting workforce data, benefits utilization, labor efficiency, and organizational value.
 - Led a $4.5M academic medicine initiative spanning 10+ institutions and senior stakeholder groups.
-- Directed $245K-$2.2M SaaS implementations for Department of Energy, defense, and regulated-industry clients.
+- Directed $245K–$2.2M SaaS implementations for Department of Energy, defense, and regulated-industry clients.
 - Developed a five-year roadmap contributing to more than $14M in savings and cost avoidance.
 - Led and developed a 17-member team while improving customer satisfaction by 34% within six months.
 
 ## Core Competencies
 
-Total Rewards strategy | Workforce strategy | Labor optimization | People analytics | Benefits analytics | Executive decision support | Workforce dashboards | HR transformation | Operating-model design | Fiscal planning | Program governance | Change leadership | Stakeholder alignment | Process improvement | AI-enabled operations | Responsible automation
+Total Rewards strategy | Workforce strategy | Labor optimization | People analytics | Benefits analytics | Executive decision support | Executive reporting | Workforce dashboards | HR transformation | Operating-model design | Fiscal planning | Program governance | Change leadership | Stakeholder alignment | Process improvement | AI-enabled operations | Responsible automation
 
 ## Professional Experience
 
 ### Wellstar Health System, Atlanta, GA
-**Technical Program Manager - Total Rewards**
-Jan 2025 - Jul 2026
+**Technical Program Manager – Total Rewards**
+Jan 2025–Jul 2026
 
 - Led enterprise Total Rewards and Labor Optimization work, translating workforce, benefits, utilization, and labor data into executive dashboards, decision support, and action-oriented recommendations.
 - Designed analytics and storytelling frameworks connecting people-program investments to ROI, utilization, operational efficiency, workforce experience, and organizational value.
@@ -37,9 +37,10 @@ Jan 2025 - Jul 2026
 - Served as a bridge between workforce data, program strategy, operational priorities, and executive decision-making.
 
 ### Harvard Medical School, Remote
-**Program Manager**
-Jan 2023 - Jan 2025
-Concurrent SME Consulting.
+**Program Manager – Concurrent SME Consulting Engagement**
+Jan 2023–Jan 2025
+
+Concurrent SME consulting engagement
 
 - Led a $4.5M academic medicine initiative spanning 10+ institutions, hospital partners, educators, and internal leadership groups.
 - Established governance, operating rhythms, decision frameworks, communication plans, and execution milestones.
@@ -47,11 +48,12 @@ Concurrent SME Consulting.
 - Aligned diverse stakeholders around priorities, dependencies, risks, and institutional outcomes.
 
 ### Ideagen DevonWay, Remote
-**Technical Project Manager - Client Implementations**
-Nov 2022 - Jan 2024
-Concurrent SME Consulting.
+**Technical Project Manager – Client Implementations**
+Nov 2022–Jan 2024
 
-- Directed SaaS implementations for Department of Energy, defense, and regulated-industry clients with budgets from $245K to $2.2M.
+Concurrent SME consulting engagement
+
+- Directed SaaS implementations for Department of Energy, defense, and regulated-industry clients with budgets from $245K–$2.2M.
 - Coordinated sales, product, engineering, implementation, and customer teams across complex technical environments.
 - Owned scope, schedule, risk, dependencies, executive reporting, escalations, and issue resolution.
 - Increased customer satisfaction by 25% through stronger communication, delivery alignment, and issue resolution.
