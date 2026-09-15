@@ -27,7 +27,7 @@ Total Rewards strategy | Workforce strategy | Labor optimization | People analyt
 ## Professional Experience
 
 ### Wellstar Health System, Atlanta, GA
-**Technical Program Manager - Total Rewards**  
+**Technical Program Manager - Total Rewards**
 Jan 2025 - Jul 2026
 
 - Led enterprise Total Rewards and Labor Optimization work, translating workforce, benefits, utilization, and labor data into executive dashboards, decision support, and action-oriented recommendations.
@@ -37,8 +37,8 @@ Jan 2025 - Jul 2026
 - Served as a bridge between workforce data, program strategy, operational priorities, and executive decision-making.
 
 ### Harvard Medical School, Remote
-**Program Manager**  
-Jan 2023 - Jan 2025  
+**Program Manager**
+Jan 2023 - Jan 2025
 Concurrent SME Consulting.
 
 - Led a $4.5M academic medicine initiative spanning 10+ institutions, hospital partners, educators, and internal leadership groups.
@@ -47,8 +47,8 @@ Concurrent SME Consulting.
 - Aligned diverse stakeholders around priorities, dependencies, risks, and institutional outcomes.
 
 ### Ideagen DevonWay, Remote
-**Technical Project Manager - Client Implementations**  
-Nov 2022 - Jan 2024  
+**Technical Project Manager - Client Implementations**
+Nov 2022 - Jan 2024
 Concurrent SME Consulting.
 
 - Directed SaaS implementations for Department of Energy, defense, and regulated-industry clients with budgets from $245K to $2.2M.
@@ -57,7 +57,7 @@ Concurrent SME Consulting.
 - Increased customer satisfaction by 25% through stronger communication, delivery alignment, and issue resolution.
 
 ### Warrior Body Spa, Tucker, GA
-**Director of Operations**  
+**Director of Operations**
 2014 - 2022
 
 - Directed operations, staffing, customer experience, systems, process improvement, and performance management.
@@ -66,7 +66,7 @@ Concurrent SME Consulting.
 - Balanced day-to-day execution with workforce planning, employee support, automation, and long-range growth.
 
 ### KSW Real Estate, Atlanta, GA
-**Project Manager, Real Estate Operations**  
+**Project Manager, Real Estate Operations**
 2010 - 2014
 
 - Developed a five-year operating and investment roadmap contributing to more than $14M in savings and cost avoidance.
