@@ -7,7 +7,7 @@ Technical Program Management | Enterprise Transformation | Platform Operations |
 **Email:** bashiraaliya@gmail.com
 **Phone:** +1-678-594-1031
 **LinkedIn:** linkedin.com/in/aaliya-bashir/
-**Portfolio:** https://bus-ops-deck.vercel.app  
+**Portfolio:** https://bus-ops-deck.vercel.app
 **Platform case study:** https://aaliya-ai-ops-ecosystem.vercel.app
 
 ## Professional Summary
