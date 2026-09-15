@@ -1,8 +1,8 @@
 # Article Digest -- Proof Points
 
-## Private AI-supported operations sandbox / homelab
+## AI-Enabled Operations Ecosystem + Platform
 
-- Built and operate a private AI-supported operations sandbox with a clear operating contract: every request has a path, an owner, a trace, and a decision rule.
+- Built and operate a private AI-enabled production platform with a clear operating contract: every request has a path, an owner, a trace, and a decision rule.
 - Designed an intake and routing layer for email, Telegram, cron, hooks, and executive requests; specialist agents execute within domain boundaries, with audit logging and escalation for material decisions.
 - Built and operate a dual-network DNS/DHCP appliance on repurposed hardware: a retired 2013 MacBook Pro running Debian and Pi-hole across two independent ISP networks.
 - Administer the homelab remotely over SSH and Tailscale. Diagnosed a relocation outage by identifying a static-only Wi-Fi configuration with no default route, then recovered access from a second machine on the same LAN.

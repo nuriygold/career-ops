@@ -87,3 +87,13 @@ Nov 2022 - Jan 2024
 - Business systems: Salesforce, ERP/CRM platforms
 - Communication and documentation: PowerPoint, Visio
 - Delivery methods: Agile and Waterfall methodologies
+
+## Selected Platform Engineering
+
+### AI-Enabled Operations Ecosystem + Platform
+
+- Built and installed a recoverable, AI-enabled personal production platform that unifies compute, networking, storage, remote access, security, observability, automation, CI/CD, APIs, MCP integrations, cloud resources, and local AI into one professionally structured operating system.
+- Designed explicit compute, network, data, security, automation, AI, and recovery planes across an Apple Silicon control host, Linux network infrastructure, NAS/backup systems, Tailscale, Cloudflare Tunnel, Docker/Compose, PostgreSQL, Redis, self-hosted CI runners, and launchd-managed services.
+- Implemented a guarded AI control plane that observes infrastructure, identifies anomalies, recommends actions, executes only registered policy-approved operations, records audit evidence, and fails closed when approval or identity controls are unavailable.
+- Built and installed a persistent OpenClaw watchdog with health checks, a staged recovery ladder, durable state, locking, cooldowns, sanitized logs, and bounded restart actions that preserve surrounding network, security, and application configuration.
+- Established operational discipline through preflight runbooks, rollback procedures, backup/restore requirements, storage-floor monitoring, runtime soak tests, evidence-driven health states, and explicit authority boundaries.

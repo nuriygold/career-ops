@@ -470,6 +470,8 @@ Curious how this repo is maintained in ~4 hours a week? Read [Agentic maintenanc
 
 My portfolio and other open source projects → [santifer.io](https://santifer.io)
 
+My AI-enabled operations ecosystem and platform case study → [Open the live case study](https://aaliya-ai-ops-ecosystem.vercel.app)
+
 Wikidata: [Santiago Fernández de Valderrama Aparicio](https://www.wikidata.org/wiki/Q138710224) · [career-ops](https://www.wikidata.org/wiki/Q139007988).
 
 ## Disclaimer
