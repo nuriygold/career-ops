@@ -16,9 +16,10 @@ Strategic programs and operations leader with 16+ years of experience turning co
 ## Selected Leadership Impact
 
 - Led a $4.5M academic medicine initiative spanning 10+ institutions, hospital partners, educators, and senior stakeholders.
-- Directed $245K-$2.2M SaaS implementations for Department of Energy, defense, and regulated-industry clients.
+- Directed $245K–$2.2M SaaS implementations for Department of Energy, defense, and regulated-industry clients.
 - Developed a five-year operating and investment roadmap contributing to more than $14M in savings and cost avoidance.
 - Led and developed a 17-member team while improving customer satisfaction by 34% within six months.
+- Increased client satisfaction by 25% through stronger delivery alignment, communication, and issue resolution.
 
 ## Core Competencies
 
@@ -34,23 +35,22 @@ Jan 2025 - Jul 2026
 - Designed reporting and storytelling frameworks connecting people-program investments to ROI, operational efficiency, workforce experience, and organizational value.
 - Coordinated HR, finance, technical, operational, analytics, and executive stakeholders to clarify requirements, align priorities, and move high-visibility work toward execution.
 - Built repeatable reporting workflows using Power BI, Tableau, SQL, Excel, and PowerQuery.
-- Role ended in July 2026 as part of a layoff.
 
 ### Harvard Medical School, Remote
 **Program Manager**
 Jan 2023 - Jan 2025
-Concurrent SME Consulting.
+Concurrent SME consulting engagement
 
 - Led a $4.5M academic medicine initiative spanning 10+ institutions, hospital partners, educators, and internal leadership groups.
 - Established governance, operating rhythms, decision frameworks, communication plans, and execution milestones for high-visibility, politically sensitive work.
 - Aligned diverse stakeholders around priorities, dependencies, risks, and institutional outcomes.
 
 ### Ideagen DevonWay, Remote
-**Technical Project Manager - Client Implementations**
+**Technical Project Manager – Client Implementations**
 Nov 2022 - Jan 2024
-Concurrent SME Consulting.
+Concurrent SME consulting engagement
 
-- Directed SaaS implementations for Department of Energy, defense, and regulated-industry clients with budgets from $245K to $2.2M.
+- Directed SaaS implementations for Department of Energy, defense, and regulated-industry clients with budgets from $245K–$2.2M.
 - Served as the primary client-facing program lead for scope, schedule, risk, dependencies, executive reporting, escalations, and issue resolution.
 - Coordinated sales, product, engineering, implementation, and customer teams across complex technical environments.
 - Increased customer satisfaction by 25% through stronger delivery alignment, communication, and issue resolution.
@@ -70,7 +70,7 @@ Concurrent SME Consulting.
 - Developed a five-year operating and investment roadmap contributing to more than $14M in savings and cost avoidance.
 - Supported portfolio expansion from two to seven properties through disciplined planning, financial analysis, and execution management.
 
-## Independent Platform Engineering & AI Operations | 2023-Present
+## Independent Platform Engineering & AI Operations | 2023–Present
 
 - Designed, built, and installed a recoverable AI-enabled production platform integrating local AI, APIs, MCP integrations, macOS, Debian Linux, cloud services, remote access, automation, observability, CI/CD, security controls, storage, and service recovery.
 - Architected distinct compute, network, data, security, automation, AI, observability, and recovery planes across OpenClaw, Ollama, LiteLLM, Docker/Compose, PostgreSQL, Redis, Tailscale, Cloudflare, self-hosted CI runners, and macOS launchd.
