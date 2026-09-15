@@ -474,9 +474,10 @@ My AI-enabled operations ecosystem and platform case study → [Open the live ca
 
 CV variants for targeted applications:
 
-- [Strategic Programs & AI-Enabled Operations](cv-strategic-programs-ai-operations.md)
-- [Technical Program Manager / AI Infrastructure](cv-technical-program-manager-ai-infrastructure.md)
-- [Workforce Strategy / Total Rewards](cv-workforce-strategy-total-rewards.md)
+- [Baseline CV](CV/cv.md)
+- [Strategic Programs & AI-Enabled Operations](CV/cv-strategic-programs-ai-operations.md)
+- [Technical Program Manager / AI Infrastructure](CV/cv-technical-program-manager-ai-infrastructure.md)
+- [Workforce Strategy / Total Rewards](CV/cv-workforce-strategy-total-rewards.md)
 
 Wikidata: [Santiago Fernández de Valderrama Aparicio](https://www.wikidata.org/wiki/Q138710224) · [career-ops](https://www.wikidata.org/wiki/Q139007988).
 
