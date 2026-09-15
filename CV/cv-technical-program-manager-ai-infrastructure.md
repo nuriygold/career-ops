@@ -3,7 +3,7 @@
 **Senior Technical Program Manager | AI Infrastructure, Platform Operations & Enterprise Automation**
 
 Atlanta, GA | bashiraaliya@gmail.com | +1-678-594-1031  
-LinkedIn: https://www.linkedin.com/in/aaliya-bashir/ | Portfolio: https://bus-ops-deck.vercel.app  
+LinkedIn: https://www.linkedin.com/in/aaliya-bashir/ | Portfolio: https://bus-ops-deck.vercel.app
 Platform case study: https://aaliya-ai-ops-ecosystem.vercel.app
 
 ## Professional Summary
@@ -24,7 +24,7 @@ Technical program management | AI infrastructure and platform operations | Enter
 ## Professional Experience
 
 ### Wellstar Health System, Atlanta, GA
-**Technical Program Manager - Total Rewards**  
+**Technical Program Manager - Total Rewards**
 Jan 2025 - Jul 2026
 
 - Led enterprise Total Rewards and Labor Optimization work by translating workforce, benefits, utilization, and labor data into executive dashboards, decision materials, and action-oriented recommendations.
@@ -33,7 +33,7 @@ Jan 2025 - Jul 2026
 - Served as the bridge between technical teams and executive audiences, converting complex analysis into decisions, priorities, risks, and next steps.
 
 ### Harvard Medical School, Remote
-**Program Manager**  
+**Program Manager**
 Jan 2023 - Jan 2025
 
 - Led a $4.5M program across 10+ institutions and multiple stakeholder groups, including hospital partners, educators, and internal leadership.
@@ -41,7 +41,7 @@ Jan 2023 - Jan 2025
 - Balanced institutional strategy, fiscal planning, long-range value creation, stakeholder priorities, and operational delivery.
 
 ### Ideagen DevonWay, Remote
-**Technical Project Manager - Client Implementations**  
+**Technical Project Manager - Client Implementations**
 Nov 2022 - Jan 2024
 
 - Directed SaaS implementations for Department of Energy, defense, and regulated-industry clients with project budgets ranging from $245K to $2.2M.
@@ -50,7 +50,7 @@ Nov 2022 - Jan 2024
 - Increased customer satisfaction by 25% through stronger communication, delivery alignment, and issue-resolution practices.
 
 ### Warrior Body Spa, Tucker, GA
-**Director of Operations**  
+**Director of Operations**
 2014 - 2022
 
 - Led and developed a 17-member team across staffing, systems, customer experience, service delivery, and performance management.
@@ -58,7 +58,7 @@ Nov 2022 - Jan 2024
 - Redesigned CRM, scheduling, marketing, and service-delivery workflows to improve consistency, visibility, and scalability.
 
 ### KSW Real Estate, Atlanta, GA
-**Project Manager, Real Estate Operations**  
+**Project Manager, Real Estate Operations**
 2010 - 2014
 
 - Developed a five-year operating and investment roadmap contributing to more than $14M in savings and cost avoidance.
@@ -94,7 +94,7 @@ Nov 2022 - Jan 2024
 
 ## Education & Certifications
 
-Harvard University - Graduate Certificate, Corporate Sustainability and Innovation  
-Augusta University - Master of Public Administration  
-Paine College - Bachelor of Arts, Philosophy  
+Harvard University - Graduate Certificate, Corporate Sustainability and Innovation
+Augusta University - Master of Public Administration
+Paine College - Bachelor of Arts, Philosophy
 Project Management Professional (PMP) | Certified ScrumMaster (CSM)
