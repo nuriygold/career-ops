@@ -300,7 +300,9 @@ node tracker-sync.mjs watch --interval 60
 node tracker-sync.mjs watch --interval 60 --repair
 ```
 
-Set `CAREER_OPS_SHEETS_SYNC=1` in `.env` to make `merge-tracker.mjs` and `set-status.mjs` perform a best-effort push after successful local writes. The sync updates only application columns A:I and preserves Sheet-only lifecycle, Dashboard, Definitions, and action-item data. Sheet edits are reported as drift rather than imported over the markdown source of truth. Configure `GOOGLE_SHEETS_TRACKER_URL`, `GOOGLE_SHEETS_TRACKER_TAB`, and `GOOGLE_SHEETS_TRACKER_RANGE` to override defaults.
+The OAuth setup writes the refresh token used by the client. For an existing setup, the required `.env` values are `GOOGLE_SHEETS_CLIENT_ID`, `GOOGLE_SHEETS_CLIENT_SECRET`, and `GOOGLE_SHEETS_REFRESH_TOKEN`. Optional settings are `GOOGLE_SHEETS_TRACKER_URL`, `GOOGLE_SHEETS_TRACKER_TAB` (default `applications-tracker-2026-08-07`), and `GOOGLE_SHEETS_TRACKER_RANGE` (default `A:I`).
+
+The projection contains `#`, `Date`, `Company`, `Role`, `Score`, `Status`, `Report`, `Follow-up`, and `Notes`; the legacy PDF column is intentionally omitted. The sync updates only application columns A:I and preserves Sheet-only lifecycle, Dashboard, Definitions, and action-item data. Sheet edits are reported as drift rather than imported over the markdown source of truth. OAuth, network, and API failures exit non-zero and are never reported as successful synchronization. Automatic pushes remain opt-in: set `CAREER_OPS_SHEETS_SYNC=1` in `.env` to make `merge-tracker.mjs` and `set-status.mjs` perform a best-effort push after successful local writes.
 
 ## Usage
 

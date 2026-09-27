@@ -23,32 +23,36 @@
 
 **Files:** Create `tracker-sheet-sync-core.mjs`, `tracker-sheet-sync-core-tests.mjs`.
 
-- [ ] Write tests first for markdown-row projection, derived follow-up, stable row identity, config defaults, and drift summaries.
-- [ ] Run `node tracker-sheet-sync-core-tests.mjs` and confirm expected failure.
-- [ ] Implement pure functions `projectTrackerRows`, `deriveFollowup`, `normalizeCell`, `indexByTrackerNumber`, and `compareProjections`.
-- [ ] Run the tests and confirm they pass.
+- [x] Write tests first for markdown-row projection, derived follow-up, stable row identity, config defaults, and drift summaries.
+- [x] Run `node tracker-sheet-sync-core-tests.mjs` and confirm expected failure.
+- [x] Implement pure functions `projectTrackerRows`, `deriveFollowup`, `normalizeCell`, `indexByTrackerNumber`, and `compareProjections`.
+- [x] Run the tests and confirm they pass.
 
 ### Task 2: OAuth REST client and CLI
 
 **Files:** Create `tracker-sync.mjs`, `tracker-sync-tests.mjs`; modify `package.json`.
 
-- [ ] Write tests for safe command construction and missing-credential errors without making network calls.
-- [ ] Implement refresh-token exchange, bounded Sheets reads/updates, `push`, `check`, and `watch` modes.
-- [ ] Ensure `push` updates only the application range and preserves existing Sheet-only tabs.
-- [ ] Run targeted and full tests.
+- [x] Write tests for safe command construction and missing-credential errors without making network calls.
+- [x] Implement refresh-token exchange, bounded Sheets reads/updates, `push`, `check`, and `watch` modes.
+- [x] Ensure `push` updates only the application range and preserves existing Sheet-only tabs.
+- [x] Run targeted and full tests.
 
 ### Task 3: Automatic writer integration
 
 **Files:** Modify `merge-tracker.mjs`, `set-status.mjs`, `tracker-utils.mjs`; create `tracker-sync-hook.mjs` and tests.
 
-- [ ] Write tests proving the hook is disabled by default, enabled by `CAREER_OPS_SHEETS_SYNC=1`, and does not throw when sync fails.
-- [ ] Add a shared post-write hook after successful atomic tracker transactions.
-- [ ] Run tracker and sync tests, then the existing pipeline verifier.
+- [x] Write tests proving the hook is disabled by default, enabled by `CAREER_OPS_SHEETS_SYNC=1`, and does not throw when sync fails.
+- [x] Add a shared post-write hook after successful atomic tracker transactions.
+- [x] Run tracker and sync tests, then the existing pipeline verifier.
 
 ### Task 4: Documentation and verification
 
 **Files:** Modify `README.md`, `docs/SCRIPTS.md`, `modes/_custom.md` only for the existing user preference/config reference if needed.
 
-- [ ] Document OAuth setup, environment variables, commands, and markdown-canonical conflict behavior.
-- [ ] Run the full test suite and a dry command check.
-- [ ] Run a real push/check only if credentials are available; otherwise report the exact prerequisite.
+- [x] Document OAuth setup, environment variables, commands, and markdown-canonical conflict behavior.
+- [x] Run the full test suite and a dry command check.
+- [x] Run a real push/check only if credentials are available; otherwise report the exact prerequisite.
+
+## Completion evidence
+
+Verified 2026-09-27 in the working tree: the three tracker-sync test files pass; the repository doctor reports onboarding complete; and no Sheets credentials are configured, so a live push/check was not attempted. The local tracker contains uncommitted user-layer updates that remain separate from this implementation documentation.

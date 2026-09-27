@@ -24,7 +24,7 @@ Configuration comes from environment or `.env`:
 - `GOOGLE_SHEETS_REFRESH_TOKEN`
 - `GOOGLE_SHEETS_TRACKER_URL` (defaults to the user's configured tracker URL in `modes/_custom.md` when available)
 - `GOOGLE_SHEETS_TRACKER_TAB` (defaults to `applications-tracker-2026-08-07`)
-- `GOOGLE_SHEETS_TRACKER_RANGE` (defaults to `A1:J`)
+- `GOOGLE_SHEETS_TRACKER_RANGE` (defaults to `A:I`; the nine-column projection intentionally omits the legacy PDF column)
 - `CAREER_OPS_SHEETS_SYNC=1` to enable automatic post-write push
 
 ## Projection

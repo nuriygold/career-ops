@@ -766,4 +766,12 @@ As the project is in continuous development, to parse for a stat we recommend do
 
 ## tracker-sync.mjs
 
-Mirrors the canonical `data/applications.md` application table into the configured Google Sheet. Run `node sheets-oauth-setup.mjs` once before the first push, then use `node tracker-sync.mjs push`, `check`, or `watch --interval 60`. `watch --repair` repairs detected drift from markdown. Set `CAREER_OPS_SHEETS_SYNC=1` to have `merge-tracker.mjs` and `set-status.mjs` perform best-effort pushes after local writes. The sync updates only columns A:I and preserves Sheet-only columns and tabs.
+Mirrors the canonical `data/applications.md` application table into the configured Google Sheet. Run `node sheets-oauth-setup.mjs` once before the first push, then use `node tracker-sync.mjs push`, `check`, or `watch --interval 60`. `watch --repair` repairs detected drift from markdown.
+
+Configuration:
+
+- Required OAuth values: `GOOGLE_SHEETS_CLIENT_ID`, `GOOGLE_SHEETS_CLIENT_SECRET`, and `GOOGLE_SHEETS_REFRESH_TOKEN`.
+- Optional target values: `GOOGLE_SHEETS_TRACKER_URL`, `GOOGLE_SHEETS_TRACKER_TAB` (default `applications-tracker-2026-08-07`), and `GOOGLE_SHEETS_TRACKER_RANGE` (default `A:I`).
+- Set `CAREER_OPS_SHEETS_SYNC=1` to have `merge-tracker.mjs` and `set-status.mjs` perform best-effort pushes after local writes.
+
+The projection uses nine columns (`#`, `Date`, `Company`, `Role`, `Score`, `Status`, `Report`, `Follow-up`, and `Notes`) and intentionally omits the legacy PDF column. Updates are bounded to A:I and preserve Sheet-only columns and tabs. The markdown tracker remains canonical: Sheet edits are reported as drift, while OAuth, network, and API failures exit non-zero rather than being reported as successful syncs.
