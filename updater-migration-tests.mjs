@@ -52,7 +52,10 @@ const bootstrapPaths = extractArray('BOOTSTRAP_PATHS');
 // exempt: git checkout of a directory pathspec tolerates content drift
 // inside it. Add an entry to ALLOWED_MISSING_ENTRIES only with a comment
 // justifying why it may legitimately be absent.
-const ALLOWED_MISSING_ENTRIES = new Set([]);
+// Retired after the suite moved to tests/context-budget.test.mjs. Keeping the
+// manifest entry lets stale installs prune the old file, but the file is not
+// expected to exist in the current tree.
+const ALLOWED_MISSING_ENTRIES = new Set(['lib/context-budget.test.mjs']);
 for (const [listName, entries] of [['SYSTEM_PATHS', systemPaths], ['BOOTSTRAP_PATHS', bootstrapPaths]]) {
   for (const entry of entries) {
     if (entry.endsWith('/')) continue;
@@ -144,7 +147,7 @@ const twoPassManifestChecks = [
   },
   {
     name: 'apply re-execs through the current Node binary',
-    pattern: /execFileSync\(process\.execPath,\s*\[\s*'update-system\.mjs',\s*'apply'\s*\]/,
+    pattern: /execFileSync\(process\.execPath,\s*\[\s*'update-system\.mjs',\s*'apply',[\s\S]*?\]\s*,\s*\{/,
   },
   {
     name: 'apply carries the original backup branch across re-exec',
@@ -172,11 +175,11 @@ const twoPassManifestChecks = [
   },
   {
     name: 'apply commit is scoped to update paths, not bare commit (#915)',
-    pattern: /git\('commit',\s*'-m',[^)]+'--',\s*\.\.\.pathsToStage\)/,
+    pattern: /git\('commit',\s*'-m',[^)]+'--',\s*\.\.\.expandedPathsToStage\)/,
   },
   {
     name: 'rollback commit is scoped to rollback paths, not bare commit (#915)',
-    pattern: /git\('commit',\s*'-m',[^)]+'--',\s*\.\.\.rollbackPaths\)/,
+    pattern: /git\('commit',\s*'-m',[^)]+'--',\s*\.\.\.expandedRollbackPaths\)/,
   },
   {
     name: 'apply captures uncommitted work via git stash create before branching (#915)',
@@ -197,7 +200,7 @@ const twoPassManifestChecks = [
     // execFileSync inherits stderr, so an expected per-path skip printed git's
     // raw pathspec error right before the success banner (#1998).
     name: 'per-path checkout pipes stderr so expected skips stay quiet (#1998)',
-    pattern: /gitQuiet\('checkout',\s*'FETCH_HEAD',\s*'--',\s*path\)/,
+    pattern: /gitQuiet\('checkout',\s*'FETCH_HEAD',\s*'--',\s*path(?:,\s*\.\.\.preserveSpecs)?\)/,
   },
   {
     name: 'skipped upstream-absent paths are summarized explicitly (#1998)',
@@ -277,6 +280,10 @@ for (const userPath of ['cv.md', 'config/profile.yml', 'modes/_profile.md', 'por
 
 const allowedSystemUserOverlap = new Set([
   'writing-samples/README.md',
+  // The updater owns these scaffold files, while documents/ remains a user
+  // directory for personal files.
+  'documents/.gitkeep',
+  'documents/README.md',
   // System-owned scaffold inside the user-layer interview-prep/ dir (#1242):
   // the updater ships these two, but never the real session files alongside them.
   'interview-prep/sessions/.gitkeep',
